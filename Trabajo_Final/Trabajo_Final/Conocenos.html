@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Información</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+</head>
+<body>
+    
+
+    <nav>
+        <ul>
+        <li><a href="Iniciar_sesion.html">Iniciar Sesion</a></li>
+        <li><a href="Compras.html">Servicios</a></li>
+        <li><a href="registro.html">Registra nueva Cuenta</a></li>
+        <li><a href="Conocenos.html">Conocenos mas</a></li>
+        </ul>
+            </nav>
+
+<br><br><br>
+    
+    <!-- Header -->
+    <header id="header">   
+    <h1>Bienvenido a nuestro apartado de Información Gamers</h1>
+   <p>Conócenos más</p>
+    </header>
+
+    <!-- Carrusel -->
+    <div class="carousel">
+   <div class="carousel-container">
+        <div class="carousel-item">
+        <a href="#section1">
+        <img src="Imagenes/buscamos.jpg" alt="Imagen 1">
+        <div class="description">Buscamos que:</div>
+        </a>
+        </div>
+
+            <div class="carousel-item">
+            <a href="#section2">
+            <img src="Imagenes/diseñada apartir.png" alt="Conoce nuestro problema">
+            <div class="description">Diseñada apartir del concepto</div>
+            </a>
+            </div>
+
+
+            <div class="carousel-item">
+            <a href="#section3">
+            <img src="Imagenes/que nos hace diferentes.webp" alt="Imagen 3">
+            <div class="description">Que nos hace diferentes</div>
+           </a>
+          </div>
+          </div>
+
+
+
+     
+
+        
+    </div>
+
+    <!-- Secciones de Información -->
+    <section id="section1">
+        <h2>Las Personas</h2>
+        
+        <p>Las personas encuentren una pagina donde puedan buscar varios tipos de productos en bases a sus necesidades o los recursoso que necesiten </p>
+        <p>Que encuentren variedad en los productos ya que no todos contamos con los mismos preguntos cada persona tiene diferentes gustos. </p>
+        <p>Que aqui encontraras desde audifonos, videojuegos, consolas, controles todo lo que tu necesitas y productos actualizandoce mas a los nuevos lanzamientos
+        </p>
+        <p>Los usuarios no solo pueden comprar tambien estaran actualizados de que productos son nuevos y podran conseguirlos antes que todos
+        </p>
+    </section>
+
+
+    <section id="section2">
+        <h2>De darle un nuevo aire a las paginas de Videojuegos</h2>
+        <p>Un problema antiguo con  las paginas de videojuegos es que muestran apartados muy notorios en base a que compres solamente pero no te informa de mejores opciones que podrias conseguir para mejorar tu experiencia de juego</p>
+        <p>Las promociones servicios y ayudas ya no los hacen mas notorios.</p>
+        <p>Perdiendote de todo los recusos que podrias utilizar y mejorar tu experiencia de juego consiguiendo los mejores productos en buen precio y de manera segura</p>
+    </section>
+
+
+    <section id="section3">
+        <h2>Porque no somos iguales</h2>
+       <p>Por muchas razones pero solo le dare una y dejare que descubra las demas viendo mas a fondo nuestra pagina</p>
+    <p>Manejo de variedad de productos</p>
+    <p>Creatividad para realizara las cosas</p>
+    
+    </section>
+    
+    </body>
+    
+
+    <!-- Scripts -->
+    <script src="carrusel.js"></script>
+    
+    <footer id="contacto">
+        <p>&copy; Contacto: info@juegos.com. .</p>
+        <p>2024 Videojuegos Inc.</p>
+        <p>Todos los derechos reservados a Luis Enrique Gonzalez Martinez</p>
+    
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<style>
+
+body {
+    background: url('Imagenes/Fondo Inicio_Sesion.jpg') no-repeat center center fixed;
+    
+    height: 100vh;
+}
+
+
+
+    /* Estilos para el Header */
+#header {
+    text-align: center;
+    background-color: #015a1c;
+    color: #fff;
+    padding: 30px 0;
+}
+
+/* Carrusel */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 40%;
+    margin: 35px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    position: relative;
+}
+
+.carousel-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.1);
+}
+
+.description {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Botones de Navegación del Carrusel */
+.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Estilos para las Secciones */
+section {
+    padding: 50px;
+    margin: 20px auto;
+    width: 80%;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Estilos para el Hover en los párrafos */
+section p:hover {
+    background-color: #e0f7fa;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Media Queries para móviles */
+@media (max-width: 768px) {
+    .carousel {
+        width: 90%;
+    }
+
+    section {
+        width: 90%;
+    }
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    #footer {
+        text-align: center;
+    }
+
+    #footer dl.alt {
+        text-align: center;
+    }
+}
+
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+
+</style>
+
+
+

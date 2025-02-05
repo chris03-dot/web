@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Pioners</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background: url('Imagenes/Imagen de fondo.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+
+
+        .contenedor {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .imagen {
+            width: 300px;
+            border-radius: 15px;
+        }
+
+        .texto {
+            
+            top: 70%;
+            left: 50%;
+            transform: translate(-6%, -94%);
+            color: #fff;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+
+        /* Barra de Navegación */
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #007BFF;
+        }
+
+        /* Imagen de Cabecera */
+        header {
+            text-align: center;
+            padding: 100px 20px 20px;
+            color: #fff;
+        }
+
+        #imagen-cabecera {
+            width: 40%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-top: 20px;
+            color:  black;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: rgb(247, 241, 241);
+        }
+
+        /* Galería de Servicios */
+        .galeria {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 40px 20px;
+        }
+
+        .galeria a {
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .galeria img {
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.1);
+        }
+
+        .galeria p {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        /* Pie de Página */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+      
+
+        h2{
+        text-align: center;
+        color: rgb(24, 24, 24);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav>
+        <ul>
+        <li><a href="Iniciar_sesion.html">Iniciar Sesion</a></li>
+        <li><a href="Compras.html">Servicios</a></li>
+        <li><a href="registro.html">Registra nueva Cuenta</a></li>
+        <li><a href="Conocenos.html">Conocenos mas</a></li>
+        </ul>
+            </nav>
+
+    <!-- Imagen de Cabecera -->
+    <header id="inicio">
+        <img src="Imagenes/Control_Usuarios.jpg" alt="Imagen de cabecera" id="imagen-cabecera">
+        <h1>Bienvenido a Games GX</h1>
+        <p>Disfruta de la mejor experiencia de juegos en</p>
+    </header>
+
+    <!-- Sección de Galería de Servicios -->
+    <section id="galeria">
+        <h2>Contamos con estos Servicios</h2>
+
+        <div class="galeria">
+            <a href="Perfil.html">
+                <img src="Imagenes/Imagen de shop.png" alt="Actualizar Perfil">
+                <div class="texto">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Actualizar tu Perfil</div>
+            </a>
+
+            <a href="Compras.html">
+                <img src="Imagenes/compras.webp" alt="Realizar Compras">
+                <div class="texto">Tienda</div>
+            </a>
+
+            <a href="Conocenos.html">
+                <img src="Imagenes/fondo_carrusel.webp" alt="Conócenos Más">
+                <div class="texto">GAMERS UNIDOS</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer id="contacto">
+        <p>&copy; 2025 Games GX Juegos Inc. Contacto: info@juegos.com</p>
+        <p>Todos los derechos reservados a Hernandez Hernandez Christian Fernando</p>
+    </footer>
+
+</body>
+</html>
+
+

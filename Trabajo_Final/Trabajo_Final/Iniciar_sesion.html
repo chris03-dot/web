@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+
+</head>
+<body>
+    
+<form action="Iniciar_sesion.php" method="post">
+
+    <h2>Finix.Juegos FIV</h2>  
+<label for="Nombre">Nombre de Usuario</label>
+<input type="text" name="nombre" id="nombre" required><br><br>
+
+<label for="Contraseña">Contraseña de Usuario</label>
+<input type="text" name="contraseña" id="contraseña" required><br><br>
+<button type="button" id="togglePassword">
+    <img id="iconImage" src="Imagenes/spartan.png  alt="Mostrar contraseña">
+</button>
+
+<input type="submit" value="Enviar "><br><br>
+<br>
+<p>¿Aún no tienes cuenta? <a href="registro.html"> <style>a{color: white;}</style>Regístrate</p>
+</a>
+
+<script src="Inicio_Secionscript.js"></script>
+
+</form>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo de pantalla */
+body {
+    background: url('Imagenes/Fondo Inicio_Sesion.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Estilo del formulario */
+form {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Título del formulario */
+h2 {
+    margin-bottom: 20px;
+    color: #ff9800;
+}
+
+/* Etiquetas y campos de texto */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #f0efed;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ff9800;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Botón de envío */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #84d045;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #6bbe17;
+}
+
+#togglePassword {
+    position: center;
+    right: 10px;
+    top: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#iconImage {
+    width: 60px; /* Cambia el tamaño según prefieras */
+    height: 60px;
+    filter: drop-shadow(0 0 5px #00ff00); /* Efecto de sombra verde */
+}
+
+p{
+color: white;
+}
+
+</style>
+
+</body>
+</html>

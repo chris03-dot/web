@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Videojuegos</title>
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    
+            <nav>
+                <ul>
+                <li><a href="Iniciar_sesion.html">Iniciar Sesion</a></li>
+                <li><a href="Usuario_index.html">Home</a></li>
+                <li><a href="Compras.html">Servicios</a></li>
+                <li><a href="registro.html">Registra nueva Cuenta</a></li>
+                <li><a href="Conocenos.html">Conocenos mas</a></li>
+                </ul>
+                    </nav>
+        
+        </ul>
+    </nav>
+
+
+
+    <!-- Imagen de Banner -->
+    <header id="inicio">
+<br><br><br><br><br><br>
+        <h1>Bienvenido a GameStore</h1>
+        <p>Compra los mejores videojuegos y consolas al mejor precio.</p>
+    </header>
+
+    <!-- Sección de Categorías -->
+<section id="categorias">
+<h2> <br><br>Categorías</h2>
+<div class="categorias-container">
+            
+<div class="categoria">
+<img src="Compras.1html/Imagenes.compras/Fondo_compras.jpg" alt="Videojuegos">
+<h3>Videojuegos</h3>
+<p>Explora los últimos lanzamientos y clásicos.</p>
+</div>
+
+
+<div class="categoria">
+<img src="Compras.1html/Imagenes.compras/Consolas.png" alt="Consolas">
+<h3>Consolas</h3>
+<p>Encuentra la consola perfecta para tu experiencia de juego.</p>
+</div>
+
+<div class="categoria">
+<img src="Compras.1html/Imagenes.compras/accesorios_compras.jpg" alt="Accesorios">
+<h3>Accesorios</h3>
+<p>Controladores, auriculares y mucho más.</p>
+</div>
+</div>
+</section>
+<br<br><br><br>
+
+    <!-- Sección de Productos Destacados -->
+<section id="destacados">
+<h2>Productos Destacados</h2>
+<div class="productos-container">
+<div class="producto">
+<img src="Compras.1html/Imagenes.compras/mario.jpg" alt="Juego 1">
+<h3>Clasicos</h3>
+<p>$59.99</p>
+<button><a href="viedeojuegos.html">Comprar Ahora</a></button>
+
+</div>
+
+<div class="producto">
+<img src="Compras.1html/Imagenes.compras/acc.jpg" alt="Juego 2">
+<h3>Consolas</h3>
+<p>$500.00</p>
+<button><a href="Consolas.html">Comprar Ahora</a></button>
+</div>
+
+<div class="producto">
+<img src="Imagenes/Accesorios.webp" alt="Juego 3">
+<h3>Accesorios</h3>
+<p>$100.99</p>
+<button><a href="Accesorios.html">Comprar Ahora</a></button>
+</div>
+</div>
+</section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto">
+        <br>
+        <h2>Tienes alguna pregunta contactanos</h2>
+        <br>
+        <h2>Ingresa tus datos</h2>
+        
+          <form action="compras.php" method="post">  
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+            <input type="submit" value=" Enviar">
+        </form>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; Contacto: info@juegos.com. .</p>
+        <p>2024 Videojuegos Inc.</p>
+        <p>Todos los derechos reservados a Luis Enrique Gonzalez Martinez</p>
+    </footer>
+
+</body>
+</html>
+
+
+<style>
+
+
+.boton-enviar {
+    padding: 30px 30px; /* Espacio interno (vertical y horizontal) */
+    font-size: 40px;
+    
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Imagenes/letras.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fffbfb;
+}
+
+/* Barra de Navegación */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #0d0d0d;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Imagen de Banner */
+header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#banner {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+h2{
+text-align: center;
+}
+
+header h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Sección de Categorías */
+.categorias-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.categoria {
+    text-align: center;
+}
+
+.categoria img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Sección de Productos Destacados */
+.productos-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.producto {
+    text-align: center;
+}
+
+.producto img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Formulario de Contacto */
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #151414;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+</style>
